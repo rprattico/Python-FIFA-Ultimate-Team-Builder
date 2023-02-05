@@ -104,10 +104,12 @@ The Functions
 Several functions were created to handle different aspects of building the squad.
 These functions mainly consist of if, while and for loops to handle the data piece by piece
 as well as the assignment of new variables :
+
 ● sportposition(file, sport): Seeing as how this program is intended to be used
 for a variety of sports, this function’s purpose is to return the positions of the
 desired sport after having read them from file. It returns positionlist, a
 template of the sport’s positions which is the backbone to building the team.
+
 ● countrysearch(file, category, R): This function is extremely important in
 sorting data. Since there are nearly a thousand players in the player
 database, countrysearch scans the file at row[R] for the desired category
@@ -115,10 +117,13 @@ and appends every match to a new list so that it returns a list of players who
 all belong to the specified category. Because this new list is much smaller
 than the original database, it is also much easier to use the data stored within
 it.
+
 ● keywithmaxval(d), keywithminval(d): These functions are used to return the
 key with the dictionary’s smallest or largest values.
+
 ● substitute(i): This function raises a prompt informing the user of a player
 missing at a position and asks them for a replacement.
+
 ● FindBestPlayer(countrymen, team, i, Q): This function actually chooses the
 players for the team. It begins by setting player as an empty variable. While
 that variable is empty, two dictionaries are created. The program searches
@@ -132,20 +137,25 @@ maximum value, which is found using keywithmaxval(d). The player is then
 removed from the shortlist using the row index stored in the second
 dictionary. This is to make sure the same player does not appear twice in the
 same team.
+
 ● FindWorstPlayer(countrymen, team, i, Q): This function works the same
 way as FindBestPlayer, but uses keywithmaxval(d) to return the worst
 player.
+
 ● BestTeamBuilder(countrymen, Q=0): Runs FindBestPlayer for every
 position of the sport. It is defaulted at column Q=0, the column containing the
 overall rating, in case a physical attribute is not specified.
+
 ● WorstTeamBuilder(countrymen, Q=0): Equivalent to BestTeamBuilder but
 uses FindWorstPlayer.
+
 ● attributebuilder(refine, category): Once a physical attribute is specified, the
 default Q value must be changed. The previously created attributedict is
 used to find which column B the ratings for that attribute is. Once it is found,
 the user must specify what extreme they want the attribute to be at: if the user
 wants the attribute at its maximum, the team is built using BestTeamBuilder
 with B instead of Q. Else, WorstTeamBuilder is run with B instead of Q.
+
 ● morefilters(refine): This function is run after the shortlist is created. It first
 enquires if the user wants to add a physical attribute. An if loop is used: if
 they do, the function then asks if they wish to see the attribute directory. As
@@ -155,7 +165,9 @@ consults the directory until they input an attribute that does exist. Once an
 attribute is inputed, it is sent to attributebuilder to construct the team. If they
 do not wish to add an attribute, the shortlist (labelled as refine) is sent to
 either BestTeamBuilder or WorstTeamBuilder.
+
 The Procedure
+
 These are the actual steps followed by the program. It first prints a welcome
 message and presents the available sports. A prompt then asks the user to select a sport
 from the list. All inquisitive prompts in this program are created using the input() function. As
@@ -167,18 +179,23 @@ that the user selection for geographical theme is accepted or redirected to the 
 From there, the procedure of the functions take course. Lastly, after the team is complete,
 the players are printed in a vertical list so that this player list can be directly translated to the
 Template initially created.
+
 Terminology
+
 Goalkeeping:
 GK - Goalkeeper
+
 Defense:
 LB - Left Back
 CB - Center Back
 CB - Center Back
 RB - Right Back
+
 Midfield:
 LM - Left Midfield
 CM - Central Midfield
 RM - Right Midfield
+
 Attack:
 LW - Left Wing
 ST - Striker
