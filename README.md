@@ -29,6 +29,8 @@ have a different number of each position. For example, a 5-3-2 formation will ha
 center-backs (CB), whereas a 4-4-2 will have 2. To simplify the construction of the team, the
 program automatically uses a 4-3-3 formation (which is popularly used in both the video
 game and in real life) for every team it builds.
+
+
 Dozens of leagues exist around the world and hundreds of players play in each of
 those leagues. To facilitate data storage, this program has refined the data down to only the
 top 5 European leagues and the teams and players playing in those leagues. Furthermore,
@@ -36,7 +38,11 @@ this program is intended for the FIFA 16 edition of FIFA Ultimate Team, therefor
 used in this program was recorded during the 2016 season. Since then, players and teams
 of each league may have changed. The player ratings have also undoubtedly changed.
 Hence, this program is only practical for the FIFA 16 instalment of FIFA Ultimate Team.
+
+
 User’s Manual
+
+
 1. Introduction
 A version of the Ultimate Team module exists in nearly every sport themed video
 game manufactured by EA Sports. This program can be applied to the Football, Hockey,
